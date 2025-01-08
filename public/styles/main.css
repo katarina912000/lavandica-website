@@ -1,6 +1,6 @@
 /*new style, no chat gpt*/
 body {
-  background-image: url("../images/image.jpg");
+  background-image: url("/images/image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
