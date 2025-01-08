@@ -1,3 +1,7 @@
+
+---
+import styles from './styles/main.css';
+---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -5,13 +9,86 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Lavandica</title>
+		<link rel="stylesheet" href="../public/styles/main.css">
 	</head>
-	<body>
-		
-		<div>
-			<img style="width:300px;" src="../public/images/image.jpg">
-			<img style="width:300px;" src="../public/images/image1.jpeg">
+	<body id="body">
+	
+	<!--prvi deo -->
+	
+		<div class="rect-first">
+			<section>
+				
+				<div class="layout layout-first">
+					<img  style="width:100px; margin-right: 230px" src="../public/images/logo.png">
+					
+					<p id="about-me">O meni</p><br/>
+					<p id="categories">Kategorije</p>	<br/>		
+					<p id="blog">Blog</p><br/>
+					<p id="contact">Kontakt</p><br/>
+	
+				</div>
+				<div class="text-first-page">
+					<p>Pozajmi od prirode ono što ti već svakako pruža.</p>
+					<p style="font-size: 18px;">Svi proizvodi su napravljeni 100% prirodno i sa ljubavlju.</p>
+	<p style="font-size: 14px; display:flex; justify-content: right;"><i>Angelika D.</i></p>
+	
+				</div>
+				<div style="margin-left: 250px; width:500px; margin-top: -650px; opacity:1.0">
+					<img  style="width:560px; display:flex;justify-content: right; margin-left: 200px;" src="../public/images/kamenje.png">
 
-		</div>
+				</div>
+			</section>
+			</div>
+			<div class="second-page">
+				<div class="layout" >
+					
+						<p class="rect-brown layout-second ">Kategorije</p>
+						<p class="layout-mini">svih proizvoda </p>
+							<p class="layout-mini">u ponudi</p>
+						
+				</div >
+				
+				<div class="category-image-row">
+					<!--tu sad idu 4 kategorije slika -->
+				    <div>
+					  <img class="category-image" src="../public/images/category-test.jpg">
+				      <p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
+					</div>
+					<div>
+						<img class="category-image" src="../public/images/category-test.jpg">
+						<p class="layout-mini" style="display: flex; justify-content: center">Telo</p>
+					  </div>
+				    <div>
+					   <img class="category-image" src="../public/images/category-test.jpg">
+					   <p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
+					</div>
+					<div>
+						<img class="category-image" src="../public/images/category-test.jpg">
+						<p class="layout-mini" style="display: flex; justify-content: center">Kućna hemija</p>
+					</div>
+				</div>
+
+				<p class="rect-brown layout-second " style="height: 50px; font-size: 19px; width:150px; color:#f5f5f5">O proizvodima</p>
+			</div>
+	<!--treci deo -->
+	<div class="layout third-page ">
+		
+			<img style="width: 350px; height:300px; border-radius: 300px; margin:160px; margin-right: 250px;" src="../public/images/image1.jpeg">
+			<img style="float: right; width:800px; position:relative;z-index: 0;" src="../public/images/list-third.jpg">
+			<div style="display: block; position:absolute; float:right">
+				<p style="font-size: 28px; margin-top:200px">O meni</p>
+				<div style="width: 50px; background-color: #AC8F8F; height: 5px; border-radius: 30px; margin-top:30px"></div>
+				<p style=" margin-top:30px;">Samoukost, bavim se proučavanjem <br/>
+					fitokozmetike i <br/>
+					fitoterapije. <br/>
+					Medicinski sam radnik i primarno <br/>
+					 zanimanje mi je rendgen tehničar.</p>
+					 
+			</div>
+			
+			
+		
+	</div>
+	
 	</body>
 	</html>
