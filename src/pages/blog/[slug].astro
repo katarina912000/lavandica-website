@@ -1,0 +1,35 @@
+---
+import blogData from '../../data/blog.json';
+
+type Post = {
+  slug: string;
+  title: string;
+  image: string;
+  content: string;
+};
+
+export async function getStaticPaths() {
+  const posts: Post[] = blogData;
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post }: { post: Post } = Astro.props;
+---
+
+<html lang="sr">
+  <head>
+    <title>{post.title}</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <h1 style="color: aliceblue;">{post.title}</h1>
+<!--       <img src={post.image} alt={post.title} />
+ -->      <div style="color: aliceblue;" set:html={post.content}></div>
+    </main>
+  </body>
+</html>

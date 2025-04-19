@@ -52,7 +52,7 @@ import styles from './styles/main.css';
 				</div>
 			</section>
 		</div>
-			<div>
+			<!-- <div>
 				<img  style="position: absolute;
   top: -190px;
   bottom: 0%;
@@ -61,7 +61,7 @@ import styles from './styles/main.css';
   width: 600px;
   z-index: 3;" src="/images/kamenje.png">
 
-			</div>
+			</div> -->
 			<section id="categories">
 				<div class="second-page" >
 					<div class="layout" >
@@ -75,19 +75,19 @@ import styles from './styles/main.css';
 					<div class="category-image-row">
 						<!--tu sad idu 4 kategorije slika -->
 						<div>
-						  <img class="category-image" src="/images/category-test.jpg">
-						  <p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
+							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
 						</div>
 						<div>
-							<img class="category-image" src="/images/category-test.jpg">
+							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Telo</p>
 						  </div>
 						<div>
-						   <img class="category-image" src="/images/category-test.jpg">
-						   <p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
+							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
 						</div>
 						<div>
-							<img class="category-image" src="/images/category-test.jpg">
+							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Kućna hemija</p>
 						</div>
 					</div>
@@ -128,19 +128,20 @@ import styles from './styles/main.css';
 			<!--tri diva tri slike kao blogovi, moraju biti klikabilni -->
 			<div class="blog-cards">
 				<div class="blog-card " >
-					<img class="img-blog" src="/images/blog1.jpg">
+					<a href="/blog/kako-sam-pocela">
+						<img class="img-blog" src="/images/blog1.jpg"></a>
 					<div style=" width: 50px; background-color: #AC8F8F; height: 5px; border-radius: 30px; margin:30px auto"></div>
 
 					<p>Kako sam počela i gde sam sad?</p>
 				</div>
 				<div class="blog-card layout" >
-					<img class="img-blog" src="/images/blog2.jpg">
+					<a href="/blog/recepti-iz-baste"><img class="img-blog" src="/images/blog2.jpg"></a>
 					<div style=" width: 50px; background-color: #AC8F8F; height: 5px; border-radius: 30px; margin:30px auto"></div>
 
 					<p>3 ideje za recepte iz tvoje bašte</p>
 				</div>
 				<div class="blog-card layout" >
-					<img class="img-blog" src="/images/blog3.jpg">
+					<a href="/blog/divcibare-setnja"><img class="img-blog" src="/images/blog3.jpg"></a>
 					<div style=" width: 50px; background-color: #AC8F8F; height: 5px; border-radius: 30px; margin:30px auto"></div>
 
 					<p>Šetnja Divčibarima, branje bilja</p>
