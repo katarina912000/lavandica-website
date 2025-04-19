@@ -1,7 +1,11 @@
 /*new style, no chat gpt*/
 
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Sakriva horizontalni skrol */
@@ -10,6 +14,25 @@ body {
   background-image: url("/images/image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 5px;
+  pointer-events: auto;
+  /* Ili block ako treba */
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  z-index: 1000;
+  position: relative; /* obavezno za z-index da bi radio */
+}
+
+/* Opcionalno: Promena boje kada korisnik pređe mišem preko linka */
+a:hover {
+  color: #cc7a73; /* Postavi boju po izboru */
 }
 
 .rect-first {
@@ -74,7 +97,7 @@ body {
   width: 100%;
   margin-left: 0;
   height: 550px;
-  margin-top: -300px;
+  margin-top: 40px;
   border-radius: 100px;
 }
 
@@ -222,7 +245,19 @@ body {
   width: 20px;
   height: 10px;
 }
-
+.nav-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1001;
+  position: relative;
+  display: inline; /* ili inline-block, nikako flex */
+}
 /* From Uiverse.io by MuhammadHasann */
 button {
   font-family: "Inria Serif";
@@ -356,5 +391,21 @@ button:hover .icon-3 {
 
   100% {
     transform: rotate(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rect-first {
+    width: 90%;
+    height: 90%;
+  }
+  .layout {
+    font-size: 15px;
+  }
+  .layout-first {
+    font-size: 15px;
+  }
+  .text-first-page {
+    font-size: 17px;
   }
 }

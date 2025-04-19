@@ -10,70 +10,96 @@ import styles from './styles/main.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Lavandica</title>
 		<link rel="stylesheet" href="/styles/main.css">
+		<!--skripte -->
+
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "kW_izrDb21wXw24ey",
+      });
+   })();
+</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script src="/script.js" defer></script>
+
+		
 	</head>
 	<body id="body">
-	
+
 	<!--prvi deo -->
-	
+
 		<div class="rect-first">
 			<section>
-				
+
 				<div class="layout layout-first">
 					<img  style="width:100px; margin-right: 230px" src="/images/logo.png">
-					
-					<p id="about-me">O meni</p><br/>
-					<p id="categories">Kategorije</p>	<br/>		
-					<p id="blog">Blog</p><br/>
-					<p id="contact">Kontakt</p><br/>
-	
+					<nav>
+							<a href="#aboutme">O meni</a>
+							<a href="#categories">Kategorije</a>
+							<a href="#blog">Blog</a>
+							<a href="#contact">Kontakt</a>						  
+					</nav>
+					<br/>
 				</div>
 				<div class="text-first-page">
 					<p>Pozajmi od prirode ono što ti već svakako pruža.</p>
 					<p style="font-size: 18px;">Svi proizvodi su napravljeni 100% prirodno i sa ljubavlju.</p>
-	<p style="font-size: 14px; display:flex; justify-content: right;"><i>Angelika D.</i></p>
-	
+					<p style="font-size: 14px; display:flex; justify-content: right;"><i>Angelika D.</i></p>
 				</div>
-			
 			</section>
-			</div>
-			<div style="">
-				<img  style="margin-left: 600px;width:600px;margin-top: -680px;position:relative;z-index: 3;" src="/images/kamenje.png">
+		</div>
+			<div>
+				<img  style="position: absolute;
+  top: -190px;
+  bottom: 0%;
+  left: 78%;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: 3;" src="/images/kamenje.png">
 
 			</div>
-			<div class="second-page">
-				<div class="layout" >
-					
-						<p class="rect-brown layout-second ">Kategorije</p>
-						<p class="layout-mini">svih proizvoda </p>
-							<p class="layout-mini">u ponudi</p>
-						
-				</div >
-				
-				<div class="category-image-row">
-					<!--tu sad idu 4 kategorije slika -->
-				    <div>
-					  <img class="category-image" src="/images/category-test.jpg">
-				      <p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
+			<section id="categories">
+				<div class="second-page" >
+					<div class="layout" >
+
+							<p class="rect-brown layout-second ">Kategorije</p>
+							<p class="layout-mini">svih proizvoda </p>
+								<p class="layout-mini">u ponudi</p>
+
+					</div >
+
+					<div class="category-image-row">
+						<!--tu sad idu 4 kategorije slika -->
+						<div>
+						  <img class="category-image" src="/images/category-test.jpg">
+						  <p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
+						</div>
+						<div>
+							<img class="category-image" src="/images/category-test.jpg">
+							<p class="layout-mini" style="display: flex; justify-content: center">Telo</p>
+						  </div>
+						<div>
+						   <img class="category-image" src="/images/category-test.jpg">
+						   <p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
+						</div>
+						<div>
+							<img class="category-image" src="/images/category-test.jpg">
+							<p class="layout-mini" style="display: flex; justify-content: center">Kućna hemija</p>
+						</div>
 					</div>
-					<div>
-						<img class="category-image" src="/images/category-test.jpg">
-						<p class="layout-mini" style="display: flex; justify-content: center">Telo</p>
-					  </div>
-				    <div>
-					   <img class="category-image" src="/images/category-test.jpg">
-					   <p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
-					</div>
-					<div>
-						<img class="category-image" src="/images/category-test.jpg">
-						<p class="layout-mini" style="display: flex; justify-content: center">Kućna hemija</p>
-					</div>
+
+					<p class="rect-brown layout-second " style="height: 50px; font-size: 19px; width:150px; color:#f5f5f5">O proizvodima</p>
 				</div>
+			</section>
 
-				<p class="rect-brown layout-second " style="height: 50px; font-size: 19px; width:150px; color:#f5f5f5">O proizvodima</p>
-			</div>
 	<!--treci deo -->
-	<div class="layout third-page ">
-		
+	<section id="aboutme">
+		<div class="layout third-page ">
+
 			<img style="width: 350px; height:300px; border-radius: 300px; margin:160px; margin-right: 250px;" src="/images/image1.jpeg">
 			<img style="float: right; width:800px; position:relative;z-index: 0;" src="/images/list-third.jpg">
 			<div style="display: block; position:absolute; float:right; right:130px; text-align: center;">
@@ -86,13 +112,16 @@ import styles from './styles/main.css';
 					fitoterapije. <br/>
 					Medicinski sam radnik i primarno <br/>
 					 zanimanje mi je rendgen tehničar.</p>
-					 
+
 			</div>
-			
-			
-		
+
+
+
 	</div>
-	
+	</section>
+
+	<section id="blog">
+
 		<div class="fourth-page-div" >
 			<div class="rect-brown" style="font-size: 45px; text-align: center; justify-content: center;">blog</div>
 		    <p class="layout-mini">Saznajte nešto više</p>
@@ -117,13 +146,15 @@ import styles from './styles/main.css';
 					<p>Šetnja Divčibarima, branje bilja</p>
 				</div>
 			</div>
-			
-		
-		</div>
 
-	
+
+		</div>
+	</section>
+
+
+
 <!--peti deo kontakt forma -->
-	<section>
+	<section id="contact">
 <div class="fifth-page">
 <img class="img-fifth" src="/images/fifth.png">
 <div class="contact-rect-brown rect-brown" style="font-size: 27px;text-align: center; justify-content: center; position:relative; z-index: 2; right: 130px; margin-top: 120px;">
@@ -131,16 +162,16 @@ import styles from './styles/main.css';
 </div>
 <div class="contact-rect-white">
 <div  style="margin-top: 40px;">
-	<input type="email" placeholder="vaš mejl:" class="contact-field">
-	<input type="text" placeholder="tema:" class="contact-field">
-	<textarea placeholder="Tekst poruke..." rows="4" cols="30" class="contact-message"></textarea>
+	<input type="email" id="email" placeholder="vaš mejl:" class="contact-field">
+	<input type="text" id="name" placeholder="tema:" class="contact-field">
+	<textarea placeholder="Tekst poruke..."  id="message" rows="4" cols="30" class="contact-message"></textarea>
 
 
 
 
 <!--komm -->
 
-<button>
+<button onclick="sendMail()">
   Pošalji
   <div class="icon-1">
     <svg
@@ -220,7 +251,7 @@ import styles from './styles/main.css';
 			<rect width="23.057" height="24" fill="white" transform="translate(0.166504)"/>
 			</clipPath>
 			</defs>
-			
+
 			</svg>
 			<a href="https://www.instagram.com/lavandica1/" style="color: #f3f3f3;margin:-5px 0px 15px 5px;">@lavandica1</a>
 
@@ -229,6 +260,35 @@ import styles from './styles/main.css';
 
 </div>
 	</section>
-	
+
+		<!--skripte -->
+		<script>
+	/* 		$(document).ready(function() {
+			  // Dodavanje glatkog skrolovanja za sve <a> tagove
+			  $("a").on('click', function(event) {
+		  
+				// Ako href nije prazno
+				if (this.hash !== "") {
+				  // Sprečavanje defaultnog ponašanja (skakanje na sekciju)
+				  event.preventDefault();
+		  
+				  // Spremanje hash-a iz href atributa (npr. #aboutme)
+				  var hash = this.hash;
+		  
+				  // Koristi jQuery animate za glatko skrolovanje do sekcije
+				  $('html, body').animate({
+					scrollTop: $(hash).offset().top
+				  }, 800, function() {
+					// Dodavanje hash-a u URL kada se završi skrolovanje
+					window.location.hash = hash;
+				  });
+				}
+			  });
+			}); */
+		  </script>
+		  
+		  
+		
 	</body>
+	
 	</html>
