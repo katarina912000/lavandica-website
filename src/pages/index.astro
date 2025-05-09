@@ -39,7 +39,16 @@ import styles from './styles/main.css';
 					<img  style="width:100px; margin-right: 230px" src="/images/logo.png">
 					<nav>
 							<a href="#aboutme">O meni</a>
-							<a href="#categories">Kategorije</a>
+						<div  class="categories-list">
+							<a href="#categories" class="a-category">Kategorije</a> 
+							<div class="dropdown-content">									
+								<a href="/categories/lice">Lice</a>									
+								<a href="/categories/telo">Telo</a>									
+								<a href="/categories/kosa">Kosa</a>
+								<a href="/categories/hemija">Hemija</a>							
+															
+ 							</div>
+						</div>
 							<a href="#blog">Blog</a>
 							<a href="#contact">Kontakt</a>						  
 					</nav>
@@ -52,16 +61,10 @@ import styles from './styles/main.css';
 				</div>
 			</section>
 		</div>
-			<!-- <div>
-				<img  style="position: absolute;
-  top: -190px;
-  bottom: 0%;
-  left: 78%;
-  transform: translateX(-50%);
-  width: 600px;
-  z-index: 3;" src="/images/kamenje.png">
-
-			</div> -->
+			 <div>
+				<img  style="position:absolute;left:78%;width:600px" src="/images/rocks.png">
+ 
+			</div> 
 			<section id="categories">
 				<div class="second-page" >
 					<div class="layout" >
@@ -75,19 +78,19 @@ import styles from './styles/main.css';
 					<div class="category-image-row">
 						<!--tu sad idu 4 kategorije slika -->
 						<div>
-							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<a href="/categories/lice"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Lice</p>
 						</div>
 						<div>
-							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<a href="/categories/telo"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Telo</p>
 						  </div>
 						<div>
-							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<a href="/categories/kosa"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Kosa</p>
 						</div>
 						<div>
-							<a href="/src/pages/categories.astro"><img class="category-image" src="/images/category-test.jpg" ></a>
+							<a href="/categories/hemija"><img class="category-image" src="/images/category-test.jpg" ></a>
 							<p class="layout-mini" style="display: flex; justify-content: center">Kućna hemija</p>
 						</div>
 					</div>
@@ -254,7 +257,7 @@ import styles from './styles/main.css';
 			</defs>
 
 			</svg>
-			<a href="https://www.instagram.com/lavandica1/" style="color: #f3f3f3;margin:-5px 0px 15px 5px;">@lavandica1</a>
+			<a href="https://www.instagram.com/lavandica1/" style="color: #f3f3f3;bottom: 15px;">@lavandica1</a>
 
 
 	</div>

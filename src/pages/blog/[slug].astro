@@ -23,13 +23,21 @@ const { post }: { post: Post } = Astro.props;
 <html lang="sr">
   <head>
     <title>{post.title}</title>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/blog.css" />
   </head>
   <body>
     <main>
+
       <h1 style="color: aliceblue;">{post.title}</h1>
 <!--       <img src={post.image} alt={post.title} />
  -->      <div style="color: aliceblue;" set:html={post.content}></div>
+
+<!--
+here we will add title
+-->
+ <div class="blog-txt">
+
+ </div>
     </main>
   </body>
 </html>
