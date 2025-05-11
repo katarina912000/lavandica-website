@@ -3,3 +3,81 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.navbar {
+  display: flex;
+  border-radius: 25px;
+  justify-content: space-between;
+
+  font-style: normal;
+  font-weight: 400;
+  z-index: 3;
+  width: 1000px;
+  height: 60px;
+  color: white;
+  background-color: aliceblue;
+  align-items: center;
+  background-color: rgb(240, 248, 255, 0.4);
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+
+  margin: 5px;
+  pointer-events: auto;
+  /* Ili block ako treba */
+  cursor: pointer;
+  color: aliceblue;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 16px; /* proširuje pozadinu oko teksta */
+}
+
+nav a:hover {
+  background-color: #696c68;
+  background-size: cover;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.categories-list .dropdown-content:hover {
+  border-radius: 0%;
+}
+
+.categories-list {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #59493e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.categories-list:hover .dropdown-content {
+  display: block;
+}

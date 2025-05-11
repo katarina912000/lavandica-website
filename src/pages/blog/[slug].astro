@@ -28,13 +28,32 @@ const { post }: { post: Post } = Astro.props;
   <body>
     <main>
 
-      <h1 style="color: aliceblue;">{post.title}</h1>
-<!--       <img src={post.image} alt={post.title} />
- -->      <div style="color: aliceblue;" set:html={post.content}></div>
+      
+<div class="navbar">
+		  <a href="/" class="a-img"><img  style="width:100px; margin-right: 230px" src="/images/logo.png">
+			</a>
+					<nav>
+							<a href="/#aboutme">O meni</a>
+						<div  class="categories-list">
+							<a href="/#categories" class="a-category">Kategorije</a> 
+							<div class="dropdown-content" style="border-radius: 0%;">									
+								<a href="/categories/lice">Lice</a>									
+								<a href="/categories/telo">Telo</a>									
+								<a href="/categories/kosa">Kosa</a>
+								<a href="/categories/hemija">Hemija</a>							
+															
+ 							</div>
+						</div>
+							<a href="/#blog">Blog</a>
+							<a href="/#contact" >Kontakt</a>						  
+					</nav>
+					      
 
+        </div>
 <!--
 here we will add title
 -->
+<h1 style="color: aliceblue;">{post.title}</h1>
  <div class="blog-txt">
 
  </div>

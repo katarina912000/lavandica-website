@@ -27,12 +27,13 @@ const { category }: { category: Category } = Astro.props;
   <body>
     <main>
        <div class="navbar">
-        <img  style="width:100px; margin-right: 230px" src="/images/logo.png">
+		  <a href="/" class="a-img"><img  style="width:100px; margin-right: 230px" src="/images/logo.png">
+			</a>
 					<nav>
-							<a href="#aboutme">O meni</a>
+							<a href="/#aboutme">O meni</a>
 						<div  class="categories-list">
-							<a href="#categories" class="a-category">Kategorije</a> 
-							<div class="dropdown-content">									
+							<a href="/#categories" class="a-category">Kategorije</a> 
+							<div class="dropdown-content" style="border-radius: 0%;">									
 								<a href="/categories/lice">Lice</a>									
 								<a href="/categories/telo">Telo</a>									
 								<a href="/categories/kosa">Kosa</a>
@@ -40,13 +41,15 @@ const { category }: { category: Category } = Astro.props;
 															
  							</div>
 						</div>
-							<a href="#blog">Blog</a>
-							<a href="#contact">Kontakt</a>						  
+							<a href="/#blog">Blog</a>
+							<a href="/#contact" >Kontakt</a>						  
 					</nav>
+					      
+
         </div>
-      <h1 style="color: aliceblue;">{category.title}</h1>
+      <h1 style="color: aliceblue;">Za lice</h1>
 <!--       <img src={post.image} alt={post.title} />
- -->      <div style="color: aliceblue;" set:html={category.content}></div>
+ -->      
 
 </main>
  <footer class="footer">

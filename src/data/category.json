@@ -1,19 +1,19 @@
 [
   {
     "slug": "lice",
-    "title": "Kategorija za lice",
+    "title": "Za lice",
     "image": "/images/blog1.jpg",
     "content": "<p>Ovde ide ceo tekst za lice...</p>"
   },
   {
     "slug": "telo",
-    "title": "Kategorija za telo",
+    "title": "Za telo",
     "image": "/images/blog1.jpg",
     "content": "<p>Ovde ide ceo tekst za telo...</p>"
   },
   {
     "slug": "kosa",
-    "title": "Kategorija za kosu",
+    "title": "Za kosu",
     "image": "/images/blog1.jpg",
     "content": "<p>Ovde ide ceo tekst za kosu...</p>"
   },

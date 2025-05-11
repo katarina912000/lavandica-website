@@ -2,6 +2,7 @@ body {
   background-image: url("/images/category-picture_3_optimized.png");
   background-repeat: no-repeat;
   background-color: #7a8876;
+  font-family: "Inria Serif";
 }
 
 footer {
@@ -16,25 +17,31 @@ footer {
 }
 
 .navbar {
-  text-indent: 40px;
-  font-family: "Inria Serif";
+  display: flex;
+  border-radius: 25px;
+  justify-content: space-between;
+
   font-style: normal;
   font-weight: 400;
   z-index: 3;
-  position: relative;
-
-  width: 70%;
-  height: 50px;
+  width: 1000px;
+  height: 60px;
   color: white;
   background-color: aliceblue;
-  opacity: 40%;
-  text-align: center;
   align-items: center;
+  background-color: rgb(240, 248, 255, 0.4);
+  margin: auto;
 }
 nav {
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -46,15 +53,24 @@ a {
   color: aliceblue;
 }
 
-.navbar a:hover {
-  background-color: #475c40;
-  color: black;
+nav a {
+  display: inline-block;
+  padding: 8px 16px; /* proširuje pozadinu oko teksta */
+}
+
+nav a:hover {
+  background-color: #696c68;
+  background-size: cover;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.categories-list .dropdown-content:hover {
+  border-radius: 0%;
 }
 
 .categories-list {
   position: relative;
   display: inline-block;
-  margin-top: 5px;
 }
 .dropdown-content {
   display: none;

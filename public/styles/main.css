@@ -33,6 +33,7 @@ nav {
 /* Opcionalno: Promena boje kada korisnik pređe mišem preko linka */
 a:hover {
   color: #cc7a73; /* Postavi boju po izboru */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .rect-first {
