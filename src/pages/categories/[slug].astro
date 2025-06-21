@@ -4,7 +4,10 @@ import blogData from '../../data/category.json';
 type Category = {
   slug: string;
   title: string;
-  image: string;
+  image1: string;
+  image2: string;
+  image3: string;
+  image4: string;
   content: string;
 };
 
@@ -47,9 +50,34 @@ const { category }: { category: Category } = Astro.props;
 					      
 
         </div>
-      <h1 style="color: aliceblue;">Za lice</h1>
-<!--       <img src={post.image} alt={post.title} />
- -->      
+      <h1 class="title" style="color: aliceblue;">{category.title}</h1> <!--ovde je frkica jer mi stoji za lice fiksno treba da mi stoji
+	  title -->
+	  <div class="img-cat">
+		<div class="anim">
+			<div class="img1-cat ">
+        	<img src={category.image1} class="img-category"/>
+		</div>
+		</div>
+		<div class="anim">
+			<div class="img1-cat">
+        <img src={category.image2} class="img-category"/>
+		</div>
+		</div>
+				<div class="anim">
+					<div class="img1-cat ">
+        <img src={category.image3} class="img-category"/>
+		</div>
+</div>
+		<div class="anim">
+			<div class="img1-cat ">
+        <img src={category.image4} class="img-category"/>
+		
+		</div>
+	
+		</div>
+		
+	  </div>
+
 
 </main>
  <footer class="footer">

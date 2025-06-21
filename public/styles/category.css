@@ -72,6 +72,39 @@ nav a:hover {
   position: relative;
   display: inline-block;
 }
+.title {
+  margin-left: 170px;
+  font-size: 34px;
+}
+.img-category {
+  width: 170px;
+  height: 170px;
+}
+.img-cat {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 70px;
+}
+.img1-cat {
+  /*ovde treba ubaciti hover momenat*/
+  width: 180px;
+  height: 180px;
+  background-color: #9ca699;
+  border-radius: 40px;
+
+  margin-top: 5px;
+}
+.anim:hover {
+  width: 200px;
+
+  display: flex;
+  justify-content: center;
+  border-radius: 40px 40px 0 0;
+  height: 400px;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 .dropdown-content {
   display: none;
   position: absolute;

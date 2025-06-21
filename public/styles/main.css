@@ -9,10 +9,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Sakriva horizontalni skrol */
+
+  width: 100vw;
+  min-height: 100vh;
 }
 body {
   background-image: url("/images/image.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -79,6 +82,7 @@ a:hover {
   justify-self: center;
   border-radius: 30px;
   margin: 1px;
+  top: 4px;
 }
 .text-first-page {
   font-family: "Inria Serif";
@@ -211,9 +215,9 @@ a:hover {
 .img-fifth {
   position: relative;
   z-index: 2;
-  width: 680px;
-  height: 700px;
-  margin-top: -100px;
+  width: 370px;
+  height: 500px;
+  margin-top: 80px;
 }
 
 .footer {
@@ -230,8 +234,8 @@ a:hover {
 
 .contact-rect-white {
   background-color: #f3f3f3;
-  margin-left: -150px;
   color: black;
+  margin-left: -30px;
   opacity: 0.7;
   width: 400px;
   height: 450px;

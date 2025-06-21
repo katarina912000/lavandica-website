@@ -1,19 +1,19 @@
 [
   {
     "slug": "kako-sam-pocela",
-    "title": "Kako sam počela i gde sam sad?",
+    "title": "Kako sam pocela i gde sam sad?",
     "image": "/images/blog1.jpg",
     "content": "<p>Ovde ide ceo tekst blog posta 1...</p>"
   },
   {
     "slug": "recepti-iz-baste",
-    "title": "3 ideje za recepte iz tvoje bašte",
+    "title": "3 ideje za recepte iz tvoje baste",
     "image": "/images/blog2.jpg",
     "content": "<p>Ovde ide tekst blog posta 2...</p>"
   },
   {
     "slug": "divcibare-setnja",
-    "title": "Šetnja Divčibarima, branje bilja",
+    "title": "Setnja Divcibarima, branje bilja",
     "image": "/images/blog3.jpg",
     "content": "<p>Ovde ide tekst blog posta 3...</p>"
   }

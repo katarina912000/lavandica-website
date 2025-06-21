@@ -2,25 +2,37 @@
   {
     "slug": "lice",
     "title": "Za lice",
-    "image": "/images/blog1.jpg",
+    "image1": "/images/cat1.png",
+    "image2": "/images/cat2.png",
+    "image3": "/images/cat3.png",
+    "image4": "/images/cat4.png",
     "content": "<p>Ovde ide ceo tekst za lice...</p>"
   },
   {
     "slug": "telo",
     "title": "Za telo",
-    "image": "/images/blog1.jpg",
+    "image1": "/images/cat1.png",
+    "image2": "/images/cat2.png",
+    "image3": "/images/cat3.png",
+    "image4": "/images/cat4.png",
     "content": "<p>Ovde ide ceo tekst za telo...</p>"
   },
   {
     "slug": "kosa",
     "title": "Za kosu",
-    "image": "/images/blog1.jpg",
+    "image1": "/images/cat1.png",
+    "image2": "/images/cat2.png",
+    "image3": "/images/cat3.png",
+    "image4": "/images/cat4.png",
     "content": "<p>Ovde ide ceo tekst za kosu...</p>"
   },
   {
     "slug": "hemija",
-    "title": "Kategorija za kucnu hemiju",
-    "image": "/images/blog1.jpg",
+    "title": "Kucna hemija",
+    "image1": "/images/cat1.png",
+    "image2": "/images/cat2.png",
+    "image3": "/images/cat3.png",
+    "image4": "/images/cat4.png",
     "content": "<p>Ovde ide ceo tekst za hemiju...</p>"
   }
 ]
