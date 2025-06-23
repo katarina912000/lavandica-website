@@ -5,6 +5,7 @@ type Post = {
   slug: string;
   title: string;
   image: string;
+  date:string;
   content: string;
 };
 
@@ -28,7 +29,9 @@ const { post }: { post: Post } = Astro.props;
   <body>
     <main>
 
-      
+      <section class="bckgr-pic">
+
+      </section>
 <div class="navbar">
 		  <a href="/" class="a-img"><img  style="width:100px; margin-right: 230px" src="/images/logo.png">
 			</a>
@@ -53,7 +56,18 @@ const { post }: { post: Post } = Astro.props;
 <!--
 here we will add title
 -->
-<h1 style="color: aliceblue;">{post.title}</h1>
+<div class="title-div">
+  <h1 class="title">{post.title}</h1>
+
+</div>
+<section class="green-section">
+  <div class="green-div">
+  {post.date}
+  <br></br>
+    {post.content}
+  </div>
+</section>
+
  <div class="blog-txt">
 
  </div>

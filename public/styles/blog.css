@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .navbar {
   display: flex;
   border-radius: 25px;
@@ -80,4 +81,34 @@ nav a:hover {
 /* Show the dropdown menu on hover */
 .categories-list:hover .dropdown-content {
   display: block;
+}
+.title-div {
+  display: flex;
+  justify-content: center; /* centriranje po širini */
+  margin-top: 90px;
+}
+
+.title {
+  font-size: 45px;
+  color: aliceblue;
+  text-align: center; /* centriranje TEKSTA unutar elementa */
+  max-width: 400px; /* ograniči širinu da prelama u dva reda */
+  line-height: 1.2;
+}
+
+.green-div {
+  width: 700px;
+  color: #ffffff;
+  z-index: -4;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  background-color: #475c40;
+  position: fixed; /* ostaje na mestu čak i kad skroluješ */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 342px;
+  padding: 30px;
 }

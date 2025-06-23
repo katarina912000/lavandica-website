@@ -1,10 +1,14 @@
 body {
   background-image: url("/images/category-picture_3_optimized.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-color: #7a8876;
   font-family: "Inria Serif";
+  background-attachment: fixed;
 }
-
+html,
+body {
+  min-height: 100%;
+}
 footer {
   background-color: black;
   position: fixed;
@@ -15,7 +19,9 @@ footer {
   text-align: center;
   display: inline;
 }
-
+p {
+  color: white;
+}
 .navbar {
   display: flex;
   border-radius: 25px;
@@ -80,6 +86,7 @@ nav a:hover {
   width: 170px;
   height: 170px;
 }
+
 .img-cat {
   display: flex;
   justify-content: center;
@@ -87,24 +94,40 @@ nav a:hover {
   gap: 70px;
 }
 .img1-cat {
-  /*ovde treba ubaciti hover momenat*/
   width: 180px;
   height: 180px;
   background-color: #9ca699;
   border-radius: 40px;
+  overflow: hidden;
 
   margin-top: 5px;
 }
 .anim:hover {
-  width: 200px;
+  transform: scale(1.03);
 
   display: flex;
   justify-content: center;
   border-radius: 40px 40px 0 0;
-  height: 400px;
+  height: 600px;
+  width: 200px;
   background-color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: black;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
+.text-img {
+  display: none;
+  position: absolute;
+  color: black;
+}
+.text-img p {
+  color: black;
+}
+/**/
+.anim:hover .text-img {
+  display: block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;

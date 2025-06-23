@@ -40,6 +40,8 @@ a:hover {
 }
 
 .rect-first {
+  position: relative;
+  z-index: 1;
   width: 900px;
   height: 450px;
   background-color: black;
@@ -48,6 +50,10 @@ a:hover {
   display: flex;
   margin: auto;
   margin-top: 50px;
+}
+section {
+  position: relative;
+  overflow: visible;
 }
 
 .layout {
@@ -69,6 +75,17 @@ a:hover {
   font-size: 30px;
   display: flex;
   justify-content: center;
+}
+
+.rocks {
+  position: absolute;
+  top: 65vh; /* podešavaš da „ulazi“ u sledeću sekciju */
+  right: 0;
+  width: 300px;
+  z-index: 10;
+  pointer-events: none;
+  transform: translateY(-50px) scale(1.1); /* blago pomeranje i uvećanje */
+  opacity: 0.95;
 }
 .rect-brown {
   background-color: #59493e;

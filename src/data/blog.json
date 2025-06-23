@@ -3,18 +3,23 @@
     "slug": "kako-sam-pocela",
     "title": "Kako sam pocela i gde sam sad?",
     "image": "/images/blog1.jpg",
-    "content": "<p>Ovde ide ceo tekst blog posta 1...</p>"
+    "date": "@May 7, 2023",
+    "content": "Lorem Ipsum is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  "
   },
   {
     "slug": "recepti-iz-baste",
     "title": "3 ideje za recepte iz tvoje baste",
     "image": "/images/blog2.jpg",
-    "content": "<p>Ovde ide tekst blog posta 2...</p>"
+    "date": "@June 14, 2025",
+
+    "content": "Lorem Ipsum is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  "
   },
   {
     "slug": "divcibare-setnja",
     "title": "Setnja Divcibarima, branje bilja",
     "image": "/images/blog3.jpg",
-    "content": "<p>Ovde ide tekst blog posta 3...</p>"
+    "date": "@June 2, 2024",
+
+    "content": "Lorem Ipsum is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  "
   }
 ]
