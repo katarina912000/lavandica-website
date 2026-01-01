@@ -6,7 +6,11 @@
     "image2": "/images/cat2.png",
     "image3": "/images/cat3.png",
     "image4": "/images/cat4.png",
-    "content": "<p>Ovde ide ceo tekst za lice...</p>"
+    "title1": "<h3>Krema za staračke bore<h3>",
+    "subtitle1": "<h5>Prirodna nega za ujednačen i blistav ten.<h5>",
+    "ml1": "50ml",
+    "contentDesc1": "Ova luksuzna krema kombinuje biljne ekstrakte i prirodna ulja koji ciljano deluju na staračke fleke, dok istovremeno hidrira i regeneriše kožu. Namenjena je za lice i dekolte, za sve tipove kože koji žele ujednačeniji i zdraviji izgled.<h5>",
+    "contentAffect1": "Posvetljuje pigmentne mrlje i staračke fleke Ujednačava ten i tonus kože Dubinski hidrira i regeneriše kožu Pomaže u smanjenju sitnih bora i finih linija"
   },
   {
     "slug": "telo",
@@ -15,7 +19,11 @@
     "image2": "/images/cat2.png",
     "image3": "/images/cat3.png",
     "image4": "/images/cat4.png",
-    "content": "<p>Ovde ide ceo tekst za telo...</p>"
+    "title1": "Krema za staračke bore",
+    "subtitle1": "Prirodna nega za ujednačen i blistav ten.",
+    "ml1": "50ml",
+    "contentDesc1": "Ova luksuzna krema kombinuje biljne ekstrakte i prirodna ulja koji ciljano deluju na staračke fleke, dok istovremeno hidrira i regeneriše kožu. Namenjena je za lice i dekolte, za sve tipove kože koji žele ujednačeniji i zdraviji izgled.",
+    "contentAffect1": "Posvetljuje pigmentne mrlje i staračke fleke Ujednačava ten i tonus kože Dubinski hidrira i regeneriše kožu Pomaže u smanjenju sitnih bora i finih linija"
   },
   {
     "slug": "kosa",
@@ -24,7 +32,11 @@
     "image2": "/images/cat2.png",
     "image3": "/images/cat3.png",
     "image4": "/images/cat4.png",
-    "content": "<p>Ovde ide ceo tekst za kosu...</p>"
+    "title1": "Krema za staračke bore",
+    "subtitle1": "Prirodna nega za ujednačen i blistav ten.",
+    "ml1": "50ml",
+    "contentDesc1": "<h5>Ova luksuzna krema kombinuje biljne ekstrakte i prirodna ulja koji ciljano deluju na staračke fleke, dok istovremeno hidrira i regeneriše kožu. Namenjena je za lice i dekolte, za sve tipove kože koji žele ujednačeniji i zdraviji izgled.<h5>",
+    "contentAffect1": "<h5>Posvetljuje pigmentne mrlje i staračke fleke<br/>Ujednačava ten i tonus kože<br/> Dubinski hidrira i regeneriše kožu <br/>Pomaže u smanjenju sitnih bora i finih linija</h5>"
   },
   {
     "slug": "hemija",
@@ -33,6 +45,10 @@
     "image2": "/images/cat2.png",
     "image3": "/images/cat3.png",
     "image4": "/images/cat4.png",
-    "content": "<p>Ovde ide ceo tekst za hemiju...</p>"
+    "title1": "<h3>Krema za staračke bore<h3>",
+    "subtitle1": "<h5>Prirodna nega za ujednačen i blistav ten.<h5>",
+    "ml1": "<h5>P50ml<h5>",
+    "contentDesc1": "<h5>Ova luksuzna krema kombinuje biljne ekstrakte i prirodna ulja koji ciljano deluju na staračke fleke, dok istovremeno hidrira i regeneriše kožu. Namenjena je za lice i dekolte, za sve tipove kože koji žele ujednačeniji i zdraviji izgled.<h5>",
+    "contentAffect1": "<h5>Posvetljuje pigmentne mrlje i staračke fleke<br/>Ujednačava ten i tonus kože<br/> Dubinski hidrira i regeneriše kožu <br/>Pomaže u smanjenju sitnih bora i finih linija</h5>"
   }
 ]

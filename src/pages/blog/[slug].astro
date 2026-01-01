@@ -25,6 +25,11 @@ const { post }: { post: Post } = Astro.props;
   <head>
     <title>{post.title}</title>
     <link rel="stylesheet" href="/styles/blog.css" />
+   <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&subset=latin-ext&display=swap"
+  /><meta charset="UTF-8" />
+
   </head>
   <body>
     <main>
@@ -36,17 +41,19 @@ const { post }: { post: Post } = Astro.props;
 		  <a href="/" class="a-img"><img  style="width:100px; margin-right: 230px" src="/images/logo.png">
 			</a>
 					<nav>
-							<a href="/#aboutme">O meni</a>
+							
 						<div  class="categories-list">
 							<a href="/#categories" class="a-category">Kategorije</a> 
-							<div class="dropdown-content" style="border-radius: 0%;">									
+							<div class="dropdown-content" style="border-radius: 0%;">
+               								
 								<a href="/categories/lice">Lice</a>									
 								<a href="/categories/telo">Telo</a>									
 								<a href="/categories/kosa">Kosa</a>
 								<a href="/categories/hemija">Hemija</a>							
 															
- 							</div>
+ 							</div> 
 						</div>
+             <a href="/#aboutme">O meni</a>	
 							<a href="/#blog">Blog</a>
 							<a href="/#contact" >Kontakt</a>						  
 					</nav>

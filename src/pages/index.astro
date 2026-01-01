@@ -9,6 +9,11 @@ import styles from './styles/main.css';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Lavandica</title>
+		   <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&subset=latin-ext&display=swap"
+  /><meta charset="UTF-8" />
+
 		<link rel="stylesheet" href="/styles/main.css">
 		<!--skripte -->
 
@@ -36,9 +41,9 @@ import styles from './styles/main.css';
 			<section>
 
 				<div class="layout layout-first">
-					<img  style="width:100px; margin-right: 230px" src="/images/logo.png">
-					<nav>
-							<a href="#aboutme">O meni</a>
+					<img  class="logo"  src="/images/logo.png">
+					<nav class="menu">
+							
 						<div  class="categories-list">
 							<a href="#categories" class="a-category">Kategorije</a> 
 							<div class="dropdown-content">									
@@ -49,6 +54,7 @@ import styles from './styles/main.css';
 															
  							</div>
 						</div>
+						<a href="#aboutme">O nama</a>
 							<a href="#blog">Blog</a>
 							<a href="#contact">Kontakt</a>						  
 					</nav>
@@ -71,9 +77,9 @@ import styles from './styles/main.css';
 				<div class="second-page" >
 					<div class="layout" >
 
-							<p class="rect-brown layout-second ">Kategorije</p>
-							<p class="layout-mini">svih proizvoda </p>
-								<p class="layout-mini">u ponudi</p>
+							<p class="rect-brown layout-second ">KATEGORIJE</p>
+							<p class="layout-mini">svih proizvoda u ponudi </p>
+						
 
 					</div >
 
@@ -108,15 +114,19 @@ import styles from './styles/main.css';
 			<img style="width: 320px; height:250px; border-radius: 300px; margin:160px; margin-right: 250px;" src="/images/image1.jpeg">
 			<img style="float: right; width:800px; position:relative;z-index: 0;" src="/images/list-third.jpg">
 			<div style="display: block; position:absolute; float:right; right:130px; text-align: center;">
-				<p style="font-size: 28px; margin-top:200px">O meni</p>
-				<div style=" width: 50px; background-color: #AC8F8F; height: 5px; border-radius: 30px; margin:30px auto">
-
+				<p style="font-size: 28px; margin-top:200px">O nama</p>
+				
+				<div class="about-me">
+<p style=" margin-top:30px;">Moje ime je Angelika Dabetić.
+					Bavimo se uzgajanjem, skupljanjem i obradom lekovitih biljaka
+					 i sve to kroz fitokozmetiku.<br/>
+					 U našoj bašti se uzgaja lavanda, ruzmarin, smilje, 
+					 menta, bosiljak i mnogo drugih lekovitih biljaka.<br/>
+					 Za razliku od industrijskog, u našim proizvodima vladaju
+prirodni zakoni.
+</p>
 				</div>
-				<p style=" margin-top:30px;">Samoukost, bavim se proučavanjem <br/>
-					fitokozmetike i <br/>
-					fitoterapije. <br/>
-					Medicinski sam radnik i primarno <br/>
-					 zanimanje mi je rendgen tehničar.</p>
+				
 
 			</div>
 
@@ -128,8 +138,8 @@ import styles from './styles/main.css';
 	<section id="blog">
 
 		<div class="fourth-page-div" >
-			<div class="rect-brown" style="font-size: 45px; text-align: center; justify-content: center;">blog</div>
-		    <p class="layout-mini">Saznajte nešto više</p>
+			<div class="rect-brown" style="font-size: 45px; text-align: center; justify-content: center;">BLOG</div>
+		    <p class="layout-mini">saznajte nešto više</p>
 			<!--tri diva tri slike kao blogovi, moraju biti klikabilni -->
 			<div class="blog-cards">
 				<div class="blog-card " >
@@ -169,8 +179,8 @@ import styles from './styles/main.css';
 </div>
 <div class="contact-rect-white">
 <div  style="margin-top: 40px;">
-	<input type="email" id="email" placeholder="vaš mejl:" class="contact-field">
-	<input type="text" id="name" placeholder="tema:" class="contact-field">
+	<input type="email" id="email" placeholder="Mejl adresa:" class="contact-field">
+	<input type="text" id="name" placeholder="Naslov poruke:" class="contact-field">
 	<textarea placeholder="Tekst poruke..."  id="message" rows="4" cols="30" class="contact-message"></textarea>
 
 

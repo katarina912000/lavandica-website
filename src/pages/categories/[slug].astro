@@ -1,6 +1,7 @@
 ---
 import blogData from '../../data/category.json';
 
+
 type Category = {
   slug: string;
   title: string;
@@ -8,7 +9,11 @@ type Category = {
   image2: string;
   image3: string;
   image4: string;
-  content: string;
+  title1: string;
+  subtitle1: string;
+  ml1: string;
+  contentDesc1: string;
+  contentAffect1: string;
 };
 
 export async function getStaticPaths() {
@@ -26,6 +31,12 @@ const { category }: { category: Category } = Astro.props;
   <head>
     <title>{category.title}</title>
     <link rel="stylesheet" href="/styles/category.css" />
+			   <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&subset=latin-ext&display=swap"
+  /><meta charset="UTF-8" />
+
+	<script src="/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -33,10 +44,11 @@ const { category }: { category: Category } = Astro.props;
 		  <a href="/" class="a-img"><img  style="width:100px; margin-right: 230px" src="/images/logo.png">
 			</a>
 					<nav>
-							<a href="/#aboutme">O meni</a>
 						<div  class="categories-list">
 							<a href="/#categories" class="a-category">Kategorije</a> 
-							<div class="dropdown-content" style="border-radius: 0%;">									
+							<div class="dropdown-content" style="border-radius: 0%;">	
+			                     
+								
 								<a href="/categories/lice">Lice</a>									
 								<a href="/categories/telo">Telo</a>									
 								<a href="/categories/kosa">Kosa</a>
@@ -44,6 +56,7 @@ const { category }: { category: Category } = Astro.props;
 															
  							</div>
 						</div>
+						<a href="/#aboutme">O meni</a>
 							<a href="/#blog">Blog</a>
 							<a href="/#contact" >Kontakt</a>						  
 					</nav>
@@ -55,23 +68,43 @@ const { category }: { category: Category } = Astro.props;
 	  <div class="img-cat">
 		<div class="anim">
 			<div class="img1-cat ">
-        	<img src={category.image1} class="img-category"/>
-		
-			<div class="text-img">
-				<p><b>Uputstvo: </b><br></br>
-					Loren industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-					<br></br><b>
-											Delovanje:
-					</b><br></br>
-										Loren industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-	<br></br>
-	<b>
-											Upozorenje:
-					</b><br></br>
-										Loren industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        	<button id="openPopup"><img src={category.image1} class="img-category"/>
+				</button>
+				<div id="popupOverlay">
+  <div class="popup">
+    <button class="closeBtn">&times;</button>
+	<div>
+<img src={category.image1} class="img-category"/>
+	<p class="non-white-text">
+		Proverite dostupnost
+	</p>
+	<p class="non-white-text">Standardna isporuka 2-5 radnih dana
+	</p>
+	</div>
+	
+<div>
+<h2>{category.title1}</h2>
+	<h5>{category.subtitle1}</h5>
+	<h5>{category.ml1}</h5>
+    <b><p  class="non-white-text">Opis proizvoda</p>
+		</b>
+	<p class="non-white-text">{category.contentDesc1}</p>
+	   <b><p  class="non-white-text">Delovanje</p>
+		</b> 
+    <p  class="non-white-text">{category.contentAffect1}</p>
+	<b><p  class="non-white-text">Delovanje</p>
+		</b> 
+    <p  class="non-white-text">{category.contentAffect1}</p>
+	<b><p  class="non-white-text">Delovanje</p>
+		</b> 
+    <p  class="non-white-text">{category.contentAffect1}</p>
 
-					</p> <!-- ovde ide naziv proizvoda, uputstvo,delovanje,upozorenje -->
-			</div>
+</div>
+    
+  </div>
+</div>
+		
+			
 
 		</div>
 		</div>
@@ -141,6 +174,8 @@ const { category }: { category: Category } = Astro.props;
 	  </div>
 
 
+
+
 </main>
  <footer class="footer">
     <svg style="margin-top: 10px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,6 +195,30 @@ const { category }: { category: Category } = Astro.props;
  		
 
         </footer>
-  
+      
+<script>
+	  // Get the pop-up element
+const openBtn = document.getElementById("openPopup");
+const popupOverlay = document.getElementById("popupOverlay");
+const closeBtn = document.querySelector(".closeBtn");
+
+openBtn.addEventListener("click", () => {
+  popupOverlay.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+  popupOverlay.style.display = "none";
+});
+
+/* Zatvaranje klikom van popupa */
+popupOverlay.addEventListener("click", (e) => {
+  if (e.target === popupOverlay) {
+    popupOverlay.style.display = "none";
+  }
+});
+
+</script>
   </body>
 </html>
+
+ 
